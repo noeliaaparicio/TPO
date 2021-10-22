@@ -1,0 +1,672 @@
+/*Formato barra de navegación */
+body{
+  margin:0;
+  margin-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 30%;
+  background-color: white;
+}
+
+
+#btn-menu{
+  display: none;
+}
+
+header label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding:10px;
+  border-right: 1px solid #fff;
+  border-top: #fff;
+  border-bottom: #fff;
+}
+
+header label:hover{
+  cursor:pointer;
+  background:#FFDAC7;
+
+}
+
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding:0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li:hover{
+  box-shadow: inset 0 0 20px #FFDAC7, 0 0 20px #FFADAD;
+  outline-color: #FFDAC7;
+
+}
+
+.menu li a{
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  border-right: 1px solid #FFDAC7;
+}
+
+.menu li{
+  text-align: center;
+  flex-grow: 1;
+  border-right: 1px solid #FFDAC7;
+  background: #FFADAD ;
+}
+
+
+/*RESPONSIVE MENU*/
+@media (max-width:768px){
+  header label{
+    display:block;
+  }
+.menu{
+  position:absolute;
+  background: #FFADAD;
+  width: 70%;
+  margin-left:-70%;
+  transition:all 0.3s;
+
+}
+
+.menu ul{
+  flex-direction: column;
+
+}
+
+.menu li{
+  border-top: 1px solid #FFDAC7;
+
+}
+#btn-menu:checked ~ .menu{
+  margin:0;
+
+}
+}
+
+
+
+
+ /*SLIDER PAGINA HOME*/
+ .slider{
+   width: 95%;
+   margin: auto;
+   overflow: hidden;
+  }
+
+ .slider ul{
+   display: flex;
+   padding: 0;
+   width: 400%;
+   animation: cambio 20s infinite alternate;
+   animation-timing-function: ease-in;
+   
+ }
+
+ .slider li{
+   width: 100%;
+   list-style: none;
+ }
+
+ .slider img{
+   width: 50%;
+ }
+
+ @keyframes cambio{
+   0% {margin-left: 0;}
+   20%{margin-left: 0;}
+   25%{margin-left:-100%}
+   45%{margin-left: -100%;}
+   50%{margin-left:-200%}
+   70%{margin-left: -200%;}
+   75%{margin-left:-300%}
+   100%{margin-left: -300%;}
+   
+
+ }
+
+ /*Formato Imagen Libro Recomendado del mes efecto click y pie de foto*/
+ 
+ p.center{
+  text-align: center;
+}
+
+
+.click:hover{
+ -webkit-animation: 0.7s click 1;
+}
+
+@-webkit-keyframes click{
+ 25%, 75%{
+   -webkit-transform:scale(0.8);
+ }
+ 50%{
+   -webkit-transform:scale(1.1);
+ }
+}
+
+
+ /*Formato del flexbox*/
+ #contenedor {
+   background: #FFDAC7;
+   display: flex;
+   flex-direction:inherit;
+   width: 200px;
+   flex-wrap: wrap;
+ }
+ .texto{
+   background: #F9F8FC;
+   width: 50%;
+ }
+ .mapa{
+   width: 50%;
+ }
+
+ .imagen{
+   width: 50%;
+ }
+ }
+ 
+
+ /*FLEXBOX PAGINA "SOBRE NOSOTROS"*/
+
+ body {
+  background: #ccc;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.flexbox-container {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+  text-align: justify;
+}
+
+.flexbox-container > div {
+	width: 50%;
+	padding: 10px;
+  background: aliceblue;
+
+}
+
+.flexbox-container > div:first-child {
+	margin-right: 20px;
+}
+
+
+/*FORMULARIO DE CONTACTO BOOTSTRAP*/
+
+.bigicon {
+    color: #FF7878;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #FF7878;
+}
+
+
+
+/*Formato Tienda Online*/
+
+body {
+  margin: 0px;
+  background-color: aliceblue;
+}
+
+button {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: ;
+  border: 2px solid salmon;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
+  width: 150px;
+  position: relative;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+  
+
+.page-nav {
+  background-color: salmon;
+  border: 1px solid white;
+  position: relative;
+}
+
+.page-nav h1 {
+  margin: 20px;
+}
+
+.button-checkout {
+  background-color: salmon;
+  border: 2px solid salmon;
+  color: white;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.button-checkout:hover {
+  background-color: #FFDAC7;
+  color: black;
+}
+
+.page-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-container {
+  margin: 15px;
+  padding: 2px 16px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.product-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.product-container img {
+  width: 300px;
+}
+
+.product-container h1 {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.button-add {
+  background-color: salmon;
+  border: 2px solid salmon;
+  color: white;
+  transition-duration: 0.4s;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.button-add:hover {
+  background-color: #FFDAC7;
+  color: black;
+}
+
+/*Formato formulario Bootstrap*/
+
+.page-nav{
+  font-size: 8px;
+  text-align: center;
+  background:white;
+  padding-bottom:5px ;
+  border:none;
+position:relative;
+}
+
+.mb-3{
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn-primary{
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: ;
+  border: 2px solid salmon;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
+  width: 150px;
+  position: relative;
+
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+  }
+
+
+}
+
+
+ /*formulario registro*/
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.logo{
+  text-align: center;
+  margin-top: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: aliceblue;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 65%;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;  
+  padding: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form div input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border: 2px solid #f2796e;
+}
+
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn-1,
+.btn-2 {
+  padding: 10px 5px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn-2 {
+  background-color: #4f70b5;
+  color: white;
+}
+
+.or {
+  text-align: center;
+}
+
+.question {
+  font-size: 15px;
+}
+
+span {
+  color: #f2796e;
+  cursor: pointer;
+}
+
+
+
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+
+button {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: salmon;
+  border: 2px solid salmon;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow:2px 2px 4px rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
+  width: 150px;
+  position: relative;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  form,
+  .content {
+    width: 100%;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    padding: 20px;
+  }
+}
+
+/*FORMULARIO DE CONTACTO */
+
+
+
+body{
+  height: 100%; 
+  font-family: 'Montserrat', sans-serif;
+  background-color: aliceblue; 
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: aliceblue; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #f2796e; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: white; 
+  width: 500px; 
+  height: 200px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #f2796e; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+
+span{
+  color: #f2796e; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #f2796e;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid forestgreen;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid forestgreen;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge";>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Farenheit</title>
+  <link rel="stylesheet" href="Formato - prueba menu.css" type="text/css" >
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+ 
+<body>
+
+  <header>
+    <br>
+    <center><nav id="logo"><img src = "logo.png" width="10%"></nav></center>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><i class="fas fa-bars"></i>   
+    </label>
+    <nav class="menu">
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="tienda.html">Tienda online</a></li>
+      <li><a href="about.html">Sobre nosotros</a></li>
+      <li><a href="registro.html">Registrate!</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<!--Inicio de sesión-->
+  <div class="page-nav">
+    <form>
+      <div class="mb-3">
+        <h1>Inicia sesión</h1>
+        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3"> </br>
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div><bR>
+      <button type="submit" class="btn btn-primary">Aceptar</button><br>
+    </form>
+      
+  <!--Tienda Online-->  
+    <button id="checkout" class="button-checkout" onclick="pay()"><i class="fas fa-shopping-basket"></i></button>
+  </div>
+    <div class="page-content">
+      <div class="product-container">
+          <h3>Al final mueren los dos</h3>
+          <img src="AlFinalMuerenLosDos.png" />
+          <h1>$1750</h1>
+          <button class="button-add" onclick="add('Al final mueren los dos', 1750)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>A través de ti</h3>
+          <img src="ATravesDeTi.png" />
+          <h1>$300</h1>
+          <button class="button-add" onclick="add('A través de ti', 300)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>Bruja Blanca</h3>
+          <img src="BrujaBlanca.png" />
+          <h1>$250</h1>
+          <button class="button-add" onclick="add('Bruja Blanca', 250)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>Caraval</h3>
+          <img src="Caraval.png" />
+          <h1>$200</h1>
+          <button class="button-add" onclick="add('Caraval', 200)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>El italiano</h3>
+          <img src="elItaliano.png" />
+          <h1>$10</h1>
+          <button class="button-add" onclick="add('El italiano', 10)">Agregar</button>
+      </div>
+
+      <div class="product-container">
+          <h3>Forastera</h3>
+          <img src="forastera.png" />
+          <h1>$650</h1>
+          <button class="button-add" onclick="add('Forastera', 650)">Agregar</button>
+      </div>
+      <div class="product-container">
+          <h3>Heartstopper</h3>
+          <img src="heartstopper.png" />
+          <h1>$650</h1>
+          <button class="button-add" onclick="add('Heartstopper', 650)">Agregar</button>
+      </div>
+      <div class="product-container">
+            <h3>Las señoritas</h3>
+            <img src="LasSeñoritas.png" />
+            <h1>$650</h1>
+            <button class="button-add" onclick="add('Las señoritas', 650)">Agregar</button>
+            </div>
+      <div class="product-container">
+              <h3>Los siete maridos de Evelyn Hugo</h3>
+              <img src="Los7MaridosDeEvelynHugo.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('Los siete maridos de Evelyn Hugo', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Nosotros en la luna</h3>
+              <img src="NosotrosEnLaLuna.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('Nosotros en la luna', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Temporada en el quinto piso</h3>
+              <img src="TemporadaEnElQuintoPiso.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('Temporada en el quinto piso', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>El héroe</h3>
+              <img src="elHeroe.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('El héroe', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>El libro mas lindo del mundo</h3>
+              <img src="ElLibroMasLindoDelMundo.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('El libro mas lindo del mundo', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>A fuego lento</h3>
+              <img src="AFuegoLento.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('A fuego lento', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>De sangre y cenizas</h3>
+              <img src="DeSangreYCenizas.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('De sangre y cenizas', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Primera persona del singular</h3>
+              <img src="PrimeraPersonaDelSingular.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('Primera persona del singular', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>La tía Cosima</h3>
+              <img src="LaTiaCosima.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('La tía Cosima', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+              <h3>Solo nosotros dos</h3>
+              <img src="soloNosotrosDos.png" />
+              <h1>$650</h1>
+              <button class="button-add" onclick="add('Solo nosotros dos', 650)">Agregar</button>
+              </div>
+      <div class="product-container">
+                <h3>Hasta que te vuelva a ver</h3>
+                <img src="hastaQueTeVuelvaAVer.png" />
+                <h1>$650</h1>
+                <button class="button-add" onclick="add('Hasta que te vuelva a ver', 650)">Agregar</button>
+                </div>
+        <div class="product-container">
+                <h3>De pronto oigo la voz del agua</h3>
+                <img src="dePronto.png" />
+                <h1>$650</h1>
+                <button class="button-add" onclick="add('De pronto oigo la voz del agua', 650)">Agregar</button>
+                </div>
+
+
+        </div>
+  </div>
+</body> 
+<br>
+<br>
+<footer style="background:#FFADAD;">
+        <br>
+        <p style="text-align: center;">Derechos reservados <i class="far fa-copyright"></i> Noelia Aparicio        
+          <a href="www.facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+        </p> 
+      
+      
+      </footer>
+      </body>
+      </html>
+      </body>
